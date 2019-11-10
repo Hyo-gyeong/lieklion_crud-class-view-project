@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang = "ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>CRUD연습!</title>
+</head>
+<body>
+
+    <form method = 'POST'> <!--POST방식으로view에 전달됨-->
+        {% csrf_token %}
+        <table>
+           {{form.as_table}}
+        </table>
+        <br>
+        <input type="submit" value="제출">
+    </form>
+</body>
+</html>
